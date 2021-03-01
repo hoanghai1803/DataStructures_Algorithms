@@ -1,0 +1,8 @@
+#include "bubble-sort.h"
+#include "insertion-sort.h"
+#include "selection-sort.h"
+#include "quick-sort.h"
+#include "merge-sort.h"
+#include "heap-sort.h"
+#include "counting-sort.h"
+#include "radix-sort.h"
