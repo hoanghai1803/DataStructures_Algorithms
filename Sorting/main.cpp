@@ -139,23 +139,18 @@ void testingSortingMethod(int id) {
 // Driver code
 int main() {
     std::cout << "===== SORTING ALGORITHMS =====\n";
-	std::cout << "Select the sorting algorithm you want to use:\n";
+    std::cout << "Select the sorting algorithm you want to use:\n";
     for (int id = 0; id <= 7; id++)
         std::cout << id << ". " << sortingNames[id] << "\n";
-		
-	while (1) {
+
+    while (1) {
         std::cout << "Type 0-7 to select method or another number to exit:\n";
-		int id;
-		while (1) {
-			std::cin >> id;
-			if (id >= 0 || id <= 7) break;
-		}
+        int id;
+        std::cin >> id;
+        if (id < 0 || id > 7) break;
 
-		if (id < 0 || id > 7) break;
-
-        std::cout << "*** " << sortingNames[id] << " Implementation ***\n";
+        std::cout << "*** " << sortingNames[id] << " implementation ***\n";
         testingSortingMethod(id);
-
-		std::cout << "================================================\n";
-	}
+        std::cout << "================================================\n"; 
+    }
 }
