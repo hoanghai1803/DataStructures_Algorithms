@@ -64,12 +64,6 @@ void inputArray(std::vector<long long>& arr, int n, long long range, int exp) {
     }
 }
 
-// This function for printing array to screen
-void printArrayToScreen(std::vector<long long> arr, int n) {
-    for (long long num: arr) std::cout << num << " ";
-    std::cout << "\n";
-}
-
 #define MANUAL_TESTING "m"
 
 // This function for testing sorting method

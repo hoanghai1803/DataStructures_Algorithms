@@ -31,8 +31,8 @@ void runQuickSort(std::vector<long long>& arr, int low, int high) {
     for (int j = low + 1; j <= high; j++)
         if (arr[j] <= pivot) std::swap(arr[++i], arr[j]);
 
-    // Swap pivot (at low) with i, after doing this, all number before pivot (at i)
-    // are smaller than pivot, and all numbers after pivot are bigger than pivot.
+    // Swap pivot (at low) with number at i, after doing this, all number before pivot
+    // (at i) are smaller than pivot, and all numbers after pivot are bigger than pivot.
     std::swap(arr[low], arr[i]);
 
     // Run Quick Sort for two halves (not include pivot)
