@@ -17,7 +17,7 @@ func sortingMethods[] = {
     countingSort, radixSort
 };
 
-// List of sorting algorithms implemented => For message to user
+// List of sorting algorithms are implemented => For message to user
 std::vector<std::string> sortingNames = {
     "Bubble Sort", "Insertion Sort", "Selection Sort",
     "Quick Sort", "Merge Sort", "Heap Sort",
@@ -133,13 +133,13 @@ void testingSortingMethod(int id) {
 
 // Driver code
 int main() {
-    std::cout << "===== SORTING ALGORITHMS =====\n";
+    std::cout << "===== SORTING ALGORITHMS IMPLEMENTATIONS =====\n";
     std::cout << "Select the sorting algorithm you want to use:\n";
     for (int id = 0; id <= 7; id++)
         std::cout << id << ". " << sortingNames[id] << "\n";
 
     while (1) {
-        std::cout << "Type 0-7 to select method or another number to exit:\n";
+        std::cout << "Type 0-7 to select method or another number to exit:";
         int id;
         std::cin >> id;
         if (id < 0 || id > 7) break;
