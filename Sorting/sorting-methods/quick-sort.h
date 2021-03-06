@@ -24,9 +24,9 @@ void runQuickSort(std::vector<long long>& arr, int low, int high) {
     // Get random pivot in range [low, high] and swap it with number at low
     int key = rand() % (high - low + 1) + low;
     std::swap(arr[low], arr[key]);
+    long long pivot = arr[low];
 
     // Partition
-    long long pivot = arr[low];
     int i = low;
     for (int j = low + 1; j <= high; j++)
         if (arr[j] <= pivot) std::swap(arr[++i], arr[j]);

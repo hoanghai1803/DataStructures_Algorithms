@@ -116,7 +116,8 @@ void testingSortingMethod(int id) {
         std::cout << "The result of sorting was written in " << RESULT_FILE << " file.\n";
 
         out.open(DATA_FILE);
-        for (int i = 0; i < n; i++) out << originalArr[i] << "\n";
+        out << n << "\n";
+        for (int i = 0; i < n; i++) out << originalArr[i] << " ";
         out.close();
         out.open(RESULT_FILE);
         for (int i = 0; i < n; i++) out << arr[i] << "\n";
