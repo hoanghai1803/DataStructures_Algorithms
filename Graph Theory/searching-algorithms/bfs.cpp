@@ -14,7 +14,7 @@
 int n, m; // Number of vertices and edges
 int src; // Given source
 std::vector<int> adj[N]; // Adjacency list
-int dist[N]; // Distances from the given src to all vertex
+int dist[N]; // Distances from the given src to all vertices
 
 void bfs() {
     std::queue<int> Q;

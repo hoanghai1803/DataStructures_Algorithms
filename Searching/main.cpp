@@ -10,13 +10,13 @@
 typedef int (*func)(std::vector<long long>, int, int, long long);
 func searchingMethods[] = {
     linearSearch, recursiveBinarySearch, 
-    iterativeBinarySearch
+    iterativeBinarySearch, ternarySearch
 };
 
 // List of searching algorithms are implemented => For message to user
 std::vector<std::string> searchingNames = {
     "Linear Search", "Recursive Binary Search",
-    "Iterative Binary Search"
+    "Iterative Binary Search", "Ternary Search"
 };
 
 int main() {
@@ -49,7 +49,7 @@ int main() {
 
     // Searching
     while (1) {
-        std::cout << "          * * *\n";
+        std::cout << "\n          *  *  *\n\n";
 
         // Chose target
         std::cout << "Enter the target you want to search: "; 
@@ -61,10 +61,12 @@ int main() {
         std::cout << "0. Linear Search\n";
         std::cout << "1. Recursive Binary Search\n";
         std::cout << "2. Iterative Binary Search\n";
-        std::cout << "Type 0-2 to select method or another to exit: ";
+        std::cout << "3. Ternary Search\n";
+        std::cout << "Type 0-3 to select method or another to exit: ";
+
         int id;
         std::cin >> id;
-        if (id < 0 || id > 2) break;
+        if (id < 0 || id > 3) break;
         long long res = searchingMethods[id](arr, 0, n - 1, target);
 
         // Print out result
