@@ -1,7 +1,7 @@
 /* ========== BREADTH FIRST SEARCH IMPLEMENTATION ========== */
 
-// This implementation of BFS calculate the distances from the given
-// source vertex to all vertex in undirected graph. If cannot reach 
+// This implementation of BFS calculates the distance from the given
+// source vertex to all vertices in undirected graph. If cannot reach 
 // to the vertex v from src vertex, then dist[v] = -1.
 // Time complexity: O(N + M),
 
