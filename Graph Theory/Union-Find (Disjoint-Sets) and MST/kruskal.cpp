@@ -29,6 +29,11 @@ void Union(int u, int v, int w) {
 }
 
 void Kruskal() {
+    // Initialization
+    for (int u = 1; u <= n; u++) par[u] = -1;
+    std::sort(edges.begin(), edges.end());
+    
+    // Building the Minimum Spanning Tree
     for (Edge e: edges) {
         int u = e.src, v = e.dest;
         int w = e.weight;
@@ -50,9 +55,6 @@ int main() {
         edges.push_back(e);
     }
 
-    for (int u = 1; u <= n; u++) par[u] = -1;
-    std::sort(edges.begin(), edges.end());
-    
     Kruskal();
     std::cout << minCost << "\n";
 }
