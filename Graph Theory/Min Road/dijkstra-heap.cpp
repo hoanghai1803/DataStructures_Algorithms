@@ -20,7 +20,7 @@
 typedef std::pair<int, int> ii;
 
 int n, m; // Number of vertices and edges
-int src; // Given source vertex
+int src; // The given source vertex
 long long F[N]; // Minimum distance from src vertex -> all vertices
 std::vector<ii> adj[N]; // Adjacency list
 std::priority_queue<ii, std::vector<ii>, std::greater<ii> > Heap; // Min Heap
@@ -40,6 +40,7 @@ void Dijkstra(int s) {
     }
 }
 
+// Driver code
 int main() {
     std::cin >> n >> m;
 

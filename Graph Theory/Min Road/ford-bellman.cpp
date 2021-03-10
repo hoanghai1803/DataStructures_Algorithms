@@ -18,7 +18,7 @@
 #define N 2555
 
 int n, m; // Number of vertices and edges
-int src; // Given source vertex
+int src; // The given source vertex
 int dist[N]; // Distances from src to all vertex
 
 struct Edge {
@@ -54,6 +54,7 @@ void FordBellman(int s) {
             std::cout << "dist[" << u << "] = " << dist[u] << "\n";
 }
 
+// Driver code
 int main() {
     std::cin >> n >> m;
     
