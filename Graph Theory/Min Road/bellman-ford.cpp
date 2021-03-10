@@ -1,14 +1,14 @@
-/* ========== FORD-BELLMAN ALGORITHM IMPLEMENTATION ========== */
+/* ========== BELLMAN-FORD ALGORITHM IMPLEMENTATION ========== */
 
-// This implementation of Ford-Bellman algorithm calculates the minimum distance
+// This implementation of Bellman-Ford algorithm calculates the minimum distance
 // from the given source vertex to all vertices in a weighted undirected graph
 // with non-negative weight cycles (may contain negative weight edges).
-// If there is a negative cycle in graph, report: "Graph contains negative weight
-// cycle". 
+// If there is a negative cycle in the graph, report: "Graph contains negative
+// weight cycle". 
 
 // Time complexity: 
 // Using adjacency matrix: O(N^3)
-// Using edge list: O(N * M)
+// Using edge list: O(N * M) - Implemented bellow
 
 #include <iostream>
 #include <climits>
@@ -28,7 +28,7 @@ struct Edge {
 
 std::vector<Edge> edges;
 
-void FordBellman(int s) {
+void BellmanFord(int s) {
     // Initialization
     for (int u = 1; u <= n; u++) dist[u] = +INF;
     dist[s] = 0;
@@ -65,12 +65,13 @@ int main() {
         Edge e = {u, v, w};
         edges.push_back(e);
         
-        // If the graph is undirected, also add (v, e, w) to edge list
+        // If the graph is undirected, also push edge (v, e) with weight w 
+        // to the edge list
         Edge _e = {v, u, w};
         edges.push_back(_e);
     }
 
     std::cin >> src;
 
-    FordBellman(src);
+    BellmanFord(src);
 }

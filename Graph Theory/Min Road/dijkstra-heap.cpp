@@ -6,8 +6,8 @@
 // v from src vertex, then dist[v] = -1.
 
 // Time complexity: 
-// Dijkstra: O(N^2).
-// Dijkstra + Heap: O(max(N, M)log2(N)).
+// Dijkstra: O(N^2)
+// Dijkstra + Heap: O(max(N, M)log2(N)) - Implemented bellow
 
 #include <iostream>
 #include <vector>
