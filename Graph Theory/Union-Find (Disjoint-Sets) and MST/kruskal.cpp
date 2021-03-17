@@ -1,5 +1,11 @@
 /* ========== KRUSKAL ALGORITHM IMPLEMENTATION ========== */
 
+// This implementation of Kruskal algorithm calculates the minimum 
+// weight spanning tree of the weighted undirected graph. We assume 
+// that the graph is connected.
+
+// Time complexity:
+
 #include <iostream>
 #include <algorithm>
 #include <vector>

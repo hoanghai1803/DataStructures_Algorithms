@@ -2,7 +2,8 @@
 
 // This implementation of DFS calculates number of connected components 
 // in an undirected graph.
-// Time complexity: O(N + M).
+
+// Time complexity: O(V + E).
 
 #include <iostream>
 #include <vector>

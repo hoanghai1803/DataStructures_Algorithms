@@ -4,7 +4,7 @@
 // between every pair of vertices in a weighted undirected multigraph. If
 // cannot reach from vertex u to vertex v, then dist[u][v] = -1.
 
-// Time complexity: O(N^3).
+// Time complexity: O(V^3).
 
 #include <iostream>
 

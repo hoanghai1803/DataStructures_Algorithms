@@ -1,12 +1,12 @@
 /* ========== PRIM'S ALGORITHM IMPLEMENTATION ========== */ 
 
-// This implementation of prim's algorithm calculates the minimum 
+// This implementation of Prim's algorithm calculates the minimum 
 // weight spanning tree of the weighted undirected graph with non-negative 
 // edge weights. We assume that the graph is connected.
 
 // Time complexity:
 // Using adjacency matrix: O(V^2)
-// Using adjacency list (+ binary heap): O(V * log_2(E))
+// Using adjacency list (+ binary heap): O(max(V, E) * log_2(V))
 
 #include <iostream>
 #include <vector>

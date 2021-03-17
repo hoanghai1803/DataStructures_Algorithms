@@ -3,7 +3,8 @@
 // This implementation of BFS calculates the distance from the given
 // source vertex to all vertices in undirected graph. If cannot reach 
 // to the vertex v from src vertex, then dist[v] = -1.
-// Time complexity: O(N + M),
+
+// Time complexity: O(V + E).
 
 #include <iostream>
 #include <vector>

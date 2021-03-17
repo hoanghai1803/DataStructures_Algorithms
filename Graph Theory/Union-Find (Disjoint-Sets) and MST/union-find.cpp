@@ -1,6 +1,6 @@
 /* ========== UNION-FIND (DISJOINT-SETS) IMPLEMENTATION ========== */
 
-// This implementation of Disjoint Sets uses for detecting cycle in an undirected graph.
+// This implementation of Disjoint-Sets uses for detecting cycle in an undirected graph.
 // We assume that the graph doesn't contain any self-loops.
 
 #include <iostream>

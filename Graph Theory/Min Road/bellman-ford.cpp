@@ -7,8 +7,8 @@
 // weight cycle". 
 
 // Time complexity: 
-// Using adjacency matrix: O(N^3)
-// Using edge list: O(N * M) - Implemented bellow
+// Using adjacency matrix: O(V^3)
+// Using edge list: O(V * E) - Implemented bellow
 
 #include <iostream>
 #include <climits>
