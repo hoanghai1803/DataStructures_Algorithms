@@ -6,7 +6,7 @@
 
 // Time complexity:
 // Using adjacency matrix: O(V^2)
-// Using adjacency list (+ binary heap): O(max(V, E) * log_2(V))
+// Using adjacency list (+ binary heap): O(max(V, E) * log_2(V)) - Implemented bellow
 
 #include <iostream>
 #include <vector>
