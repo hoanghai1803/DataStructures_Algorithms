@@ -13,10 +13,10 @@
 
 int n, m; // Number of vertices and edges
 std::vector<int> adj[N]; // Adjacency list
-std::stack<int> Stack; // Stack for storing vertices after visiting and then Remove them when find the SCC
+std::stack<int> Stack; // Stack to store the vertices after visiting, then remove them when SCC is found
 int dfn[N]; // The order of the vertex
-int low[N]; 
-int Remove[N]; // To mark whether the vertex has been visited and removed
+int low[N]; // low[u] - the minimum dfn[v], where v is all vertices can visit when start traversal from vertex u 
+int Remove[N]; // To mark whether the vertex has been removed
 int scc; // Number of Strongly Connected Components
 int num; // Counting the order of the vertices 
 
