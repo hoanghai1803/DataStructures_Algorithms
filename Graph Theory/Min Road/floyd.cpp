@@ -11,7 +11,7 @@
 #define N 502
 const int INF = 1e9;
 
-int n, m; // Number of vertices and edges
+int n, m; // The number of vertices and edges
 int dist[N][N]; // Minimum distance between every pair of vertices
 
 // Driver code

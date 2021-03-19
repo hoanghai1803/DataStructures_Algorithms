@@ -8,8 +8,8 @@
 
 #define N 100005
 
-int n, m; // Number of vertices and edges
-int par[N]; // par[u] - parent vertex of u
+int n, m; // The number of vertices and edges
+int par[N]; // par[u] - The parent vertex of u
 
 int findRoot(int u) {
     return par[u] == u ? u : (par[u] = findRoot(par[u]));

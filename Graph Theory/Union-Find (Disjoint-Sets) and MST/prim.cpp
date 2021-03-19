@@ -18,7 +18,7 @@
 
 typedef std::pair<int, int> Edge;
 
-int n, m; // Number of vertices and edges
+int n, m; // The number of vertices and edges
 std::vector<Edge> adj[N]; // Adjacency List
 int cost[N]; // cost[u] - cost of vertex u
 

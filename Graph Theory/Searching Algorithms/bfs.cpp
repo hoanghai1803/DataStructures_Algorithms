@@ -12,8 +12,8 @@
 
 #define N 100005
 
-int n, m; // Number of vertices and edges
-int src; // Given source
+int n, m; // The number of vertices and edges
+int src; // The given source
 std::vector<int> adj[N]; // Adjacency list
 int dist[N]; // Distances from the given src to all vertices
 

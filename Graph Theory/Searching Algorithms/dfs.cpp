@@ -10,10 +10,10 @@
 
 #define N 100005
 
-int n, m; // Number of vertices and edges
+int n, m; // The number of vertices and edges
 std::vector<int> adj[N]; // Adjacency list
 bool visited[N]; // Array to mark if the vertex is visited or not
-int ncc; // Number of connected component
+int ncc; // The number of connected component
 
 void dfs(int u) {
     visited[u] = true;

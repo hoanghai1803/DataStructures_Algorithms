@@ -18,7 +18,7 @@
 
 typedef std::pair<int, std::pair<int, int>> Edge;
 
-int n, m; // Number of vertices and edges
+int n, m; // The number of vertices and edges
 std::vector<Edge> edges; // Edge list
 int par[N]; // par[u] - parent vertex of vertex u
 int minCost; // Minimum weight spanning tree

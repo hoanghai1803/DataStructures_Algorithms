@@ -1,9 +1,8 @@
 /* ========== DIRECTED ACYCLIC GRAPH - BUILD AND DP ========== */
 
-// Problem: Given a directed graph with score on each vertex. Traversal from
-// any vertex, visit all possible vertices so that the sum of score is as maximum 
-// as possible. Note that the score of each vertex is only counted the first time
-// visit it.
+// Problem: Given a directed graph with score on each vertex. Traversal from any vertex, 
+// visit all possible vertices so that the sum of score is as maximum as possible. 
+// Note that the score of each vertex is only counted the first time visit it.
 
 // Solution: using Tarjan's algorithm to create the Directed Acyclic Graph (DAG) from a directed graph then dp on it.
 
@@ -30,7 +29,7 @@ int Remove[N]; // To mark whether the vertex has been removed
 int num; // Counting the order of the vertices 
 
 /* The new graph - DAG */
-int nscc; // Number of Strongly Connected Components, or also the number of vertices in DAG
+int nscc; // The number of Strongly Connected Components, or also the number of vertices in DAG
 int score_dag[N]; // The store of the DAG
 std::set<int> adj_dag[N]; // The adjacency list for DAG
 int SCC[N]; // SCC[u], where u is the vertex in base graph, this is the SCC that u belong to.

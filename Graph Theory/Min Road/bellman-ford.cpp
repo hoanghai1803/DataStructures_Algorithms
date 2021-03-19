@@ -17,7 +17,7 @@
 #define INF INT_MAX
 #define N 2555
 
-int n, m; // Number of vertices and edges
+int n, m; // The number of vertices and edges
 int src; // The given source vertex
 int dist[N]; // Distances from src to all vertex
 

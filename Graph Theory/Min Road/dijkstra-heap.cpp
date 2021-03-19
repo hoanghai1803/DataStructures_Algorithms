@@ -19,7 +19,7 @@
 
 typedef std::pair<int, int> ii;
 
-int n, m; // Number of vertices and edges
+int n, m; // The number of vertices and edges
 int src; // The given source vertex
 long long F[N]; // Minimum distance from src vertex -> all vertices
 std::vector<ii> adj[N]; // Adjacency list
