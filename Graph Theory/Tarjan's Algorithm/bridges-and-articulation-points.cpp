@@ -1,6 +1,6 @@
 /* ========== BRIDGES AND ARTICULATION POINTS DETECTION ========== */
 
-// Tarjan' algorithm to count Bridges and Articulation Points in an undirected graph.
+// Tarjan's algorithm to count Bridges and Articulation Points in an undirected graph.
 
 // Time complexity: O(V + E).
 
